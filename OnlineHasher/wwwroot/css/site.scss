@@ -1,4 +1,6 @@
 $footer-height: 75px;
+$dim-color: #e4e4e4;
+$text-color: #444;
 
 html {
     position: relative;
@@ -10,10 +12,11 @@ body {
     margin: 0 auto ($footer-height + 25) auto;
     padding: 0 1em;
     max-width: 960px;
+    color: $text-color;
 }
 
-header h1 a{
-    color: black;
+a {
+    color: #0065c2;
     text-decoration: none;
 }
 
@@ -25,16 +28,20 @@ label {
 input {
     font: inherit;
     margin-bottom: 1em;
-}
+    border: 1px solid $text-color;
+    border-radius: .2em;
+    height: 40px;
+    padding: 0 10px;
 
-    input[type=text] {
-        padding-left: 10px;
-        border-radius: .2em;
-        height: 40px;
-        border: 1px solid gray;
+    &[type=text] {
         width: 400px;
         max-width: 100%;
     }
+
+    &[type=submit] {
+        background: $dim-color;
+    }
+}
 
 output {
     display: block;
@@ -49,6 +56,6 @@ footer {
     width: 100%;
     height: $footer-height;
     text-align: center;
-    background: #d8d8d8;
+    background: $dim-color;
     font-size: .9em;
 }
