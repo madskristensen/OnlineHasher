@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+
+<form method="get" asp-page="Index">
+    <label for="password">Password</label>
+    <input type="text" id="password" name="password" value="@Request.Query["password"]" placeholder="Password" required />
+    <br />
+
+    <label for="salt">Salt (optional)</label>
+    <input type="text" id="salt" name="salt" value="@Request.Query["salt"]"  placeholder="Salt" />
+    <br />
+
+    <input type="submit" value="Generate" />
+</form>
+
+@if (!string.IsNullOrWhiteSpace(Model.Hash))
+{
+    <label for="hash">Hash</label>
+    <textarea id="hash">@Model.Hash</textarea>
+}
