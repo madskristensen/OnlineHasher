@@ -3,7 +3,7 @@
 
 <form method="get" asp-page="Index">
     <label for="password">Password</label>
-    <input type="text" id="password" name="password" value="@Request.Query["password"]" placeholder="Password" required />
+    <input type="text" id="password" name="password" value="@Request.Query["password"]" placeholder="Password" required autofocus />
     <br />
 
     <label for="salt">Salt (optional)</label>
