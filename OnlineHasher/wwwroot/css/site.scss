@@ -1,7 +1,7 @@
 $footer-height: 75px;
-$dim-color:   #e4e4e4;
-$text-color:  #444;
-$link-color:  #0065c2;
+$dim-color: #e4e4e4;
+$text-color: #444;
+$link-color: #0065c2;
 
 html {
     position: relative;
@@ -35,8 +35,8 @@ input {
     padding: 0 10px;
 
     &[type=text] {
-        width: 400px;
-        max-width: 100%;
+        width: 95%;
+        max-width: 400px;
     }
 
     &[type=submit] {
