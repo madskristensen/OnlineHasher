@@ -1,6 +1,7 @@
 $footer-height: 75px;
-$dim-color: #e4e4e4;
-$text-color: #444;
+$dim-color:   #e4e4e4;
+$text-color:  #444;
+$link-color:  #0065c2;
 
 html {
     position: relative;
@@ -16,7 +17,7 @@ body {
 }
 
 a {
-    color: #0065c2;
+    color: $link-color;
     text-decoration: none;
 }
 
