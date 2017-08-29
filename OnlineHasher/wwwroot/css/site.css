@@ -6,17 +6,13 @@ html {
 body {
     font: 20px/1.5 georgia, sans-serif;
     margin: 0 auto 100px auto;
+    padding: 0 1em;
     max-width: 960px;
 }
 
 header h1 a{
     color: black;
     text-decoration: none;
-}
-
-form {
-    width: 400px;
-    display: block;
 }
 
 label {
@@ -33,7 +29,8 @@ input {
         padding: .2em;
         border-radius: .2em;
         border: 1px solid gray;
-        width: 100%;
+        width: 400px;
+        max-width: 100%;
     }
 
 textarea {
@@ -50,4 +47,5 @@ footer {
     height: 75px;
     text-align: center;
     background: #d8d8d8;
+    font-size: .9em;
 }
