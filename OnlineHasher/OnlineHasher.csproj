@@ -3,6 +3,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="LigerShark.WebOptimizer.Core" Version="1.0.162-beta" />
+    <PackageReference Include="LigerShark.WebOptimizer.Sass" Version="1.0.32-beta" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>

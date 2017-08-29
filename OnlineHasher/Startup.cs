@@ -22,6 +22,9 @@ namespace OnlineHasher
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddWebOptimizer(pipeline => {
+                pipeline.CompileScssFiles();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,14 +40,9 @@ namespace OnlineHasher
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseWebOptimizer();
             app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
         }
     }
 }
