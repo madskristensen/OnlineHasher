@@ -28,17 +28,18 @@ input {
 }
 
     input[type=text] {
-        padding: .2em;
+        text-indent: 10px;
         border-radius: .2em;
+        height: 40px;
         border: 1px solid gray;
         width: 400px;
         max-width: 100%;
     }
 
-textarea {
-    width: 100%;
-    font: inherit;
-    height: 6em;
+output {
+    display: block;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 footer {

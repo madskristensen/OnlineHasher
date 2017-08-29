@@ -10,11 +10,11 @@
     <input type="text" id="salt" name="salt" value="@Request.Query["salt"]"  placeholder="Salt" />
     <br />
 
-    <input type="submit" value="Generate" />
+    <input type="submit" value="Generate hash" />
 </form>
 
 @if (!string.IsNullOrWhiteSpace(Model.Hash))
 {
     <label for="hash">Hash</label>
-    <textarea id="hash">@Model.Hash</textarea>
+    <output contenteditable="true" id="hash">@Model.Hash</output>
 }
